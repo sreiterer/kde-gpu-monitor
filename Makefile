@@ -13,6 +13,7 @@ install: i18n-build
 
 upgrade: i18n-build
 	kpackagetool6 --type Plasma/Applet --upgrade .
+	systemctl --user restart plasma-plasmashell.service
 
 uninstall:
 	kpackagetool6 --type Plasma/Applet --remove $(PACKAGE_ID)
