@@ -110,6 +110,14 @@ msgstr ""
 msgid "Usage: %1"
 msgstr ""
 
+#: contents/ui/FullRepresentation.qml:106 contents/ui/main.qml:110
+msgid "GPU:"
+msgstr ""
+
+#: contents/ui/FullRepresentation.qml:112
+msgid "Model:"
+msgstr ""
+
 #: contents/ui/main.qml:124
 msgid "GPU"
 msgstr ""

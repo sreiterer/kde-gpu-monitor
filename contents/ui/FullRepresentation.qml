@@ -32,6 +32,7 @@ PlasmaExtras.Representation {
     property real usedVram: NaN
     property real totalVram: NaN
     property real power: NaN
+    property string gpuType: ""
 
     Layout.preferredWidth: Kirigami.Units.gridUnit * 20
     Layout.preferredHeight: Kirigami.Units.gridUnit * 15
@@ -109,6 +110,21 @@ PlasmaExtras.Representation {
 
         Kirigami.FormLayout {
             Layout.fillWidth: true
+
+            PlasmaComponents3.Label {
+                Kirigami.FormData.label: i18n("GPU:")
+                visible: fullRoot.gpuType !== ""
+                text: fullRoot.gpuType
+                    .split(" ")
+                    .slice(0, 2)
+                    .join(" ") + (fullRoot.gpuType.split(" ").length > 2 ? "..." : "")
+            }
+
+            PlasmaComponents3.Label {
+                Kirigami.FormData.label: i18n("Model:")
+                visible: fullRoot.gpuType !== "" && fullRoot.gpuType.includes(":")
+                text: fullRoot.gpuType.split(":").slice(1).join(":").trim()
+            }
 
             PlasmaComponents3.Label {
                 Kirigami.FormData.label: i18n("Temperature:")

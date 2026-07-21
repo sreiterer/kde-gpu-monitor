@@ -95,6 +95,12 @@ PlasmoidItem {
         updateRateLimit: root.updateInterval
     }
 
+    Sensors.Sensor {
+        id: typeSensor
+        sensorId: root.gpuId !== "" ? "gpu/" + root.gpuId + "/type" : ""
+        enabled: root.gpuId !== ""
+    }
+
     // ---- Plasmoid setup ----------------------------------------------------
 
     switchWidth: Kirigami.Units.gridUnit * 12
@@ -136,5 +142,6 @@ PlasmoidItem {
         usedVram: usedVramSensor.status === Sensors.Sensor.Status.Ready ? usedVramSensor.value : NaN
         totalVram: totalVramSensor.status === Sensors.Sensor.Status.Ready ? totalVramSensor.value : NaN
         power: powerSensor.status === Sensors.Sensor.Status.Ready ? powerSensor.value : NaN
+        gpuType: root.hasGpu && typeSensor.value !== undefined ? String(typeSensor.value) : ""
     }
 }

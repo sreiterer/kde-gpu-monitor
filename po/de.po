@@ -108,6 +108,14 @@ msgstr "GPU-Monitor"
 msgid "Usage: %1"
 msgstr "Auslastung: %1"
 
+#: contents/ui/FullRepresentation.qml:106 contents/ui/main.qml:110
+msgid "GPU:"
+msgstr "GPU:"
+
+#: contents/ui/FullRepresentation.qml:112
+msgid "Model:"
+msgstr "Modell:"
+
 #: contents/ui/main.qml:124
 msgid "GPU"
 msgstr "GPU"
