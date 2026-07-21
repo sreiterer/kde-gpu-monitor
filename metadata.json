@@ -1,0 +1,21 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "sreiterer"
+            }
+        ],
+        "Category": "System Information",
+        "Description": "Graphical GPU utilization monitor for the panel",
+        "Description[de]": "Grafische Anzeige der GPU-Auslastung für die Kontrollleiste",
+        "Icon": "ksysguardd",
+        "Id": "com.github.sreiterer.gpumonitor",
+        "License": "GPL-3.0+",
+        "Name": "GPU Monitor",
+        "Name[de]": "GPU-Monitor",
+        "Version": "0.1.0",
+        "Website": "https://github.com/sreiterer/gpu-monitor-kde"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

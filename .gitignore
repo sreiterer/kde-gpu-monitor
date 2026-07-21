@@ -1,0 +1,15 @@
+# Generated gettext catalogs (rebuild with: make i18n-build)
+contents/locale/
+
+# gettext backup/merge artifacts
+po/*.po~
+po/*.mo
+
+# Editor / IDE
+*.swp
+*~
+.idea/
+.vscode/
+
+# QML tooling cache
+.qmlls.ini

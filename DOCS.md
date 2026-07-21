@@ -56,14 +56,25 @@ graph TD
 ```text
 gpu-monitor-kde/
 ├── metadata.json                 # Widget metadata (ID, name, Plasma 6 compatibility)
-└── contents/
-    ├── config/
-    │   └── main.xml              # Configuration schema (Update interval, etc.)
-    └── ui/
-        ├── main.qml              # Main entry point & state management
-        ├── CompactRepresentation.qml # UI for the panel/system tray
-        ├── FullRepresentation.qml    # UI for the expanded popup
-        └── configGeneral.qml     # Configuration UI (Update interval, graph color, etc.)
+├── Makefile                      # install / upgrade / uninstall / test / view targets
+├── contents/
+│   ├── config/
+│   │   ├── config.qml            # Config dialog categories
+│   │   └── main.xml              # Configuration schema (Update interval, etc.)
+│   └── ui/
+│       ├── main.qml              # Main entry point, sensors & GPU auto-detection
+│       ├── CompactRepresentation.qml # UI for the panel/system tray
+│       ├── FullRepresentation.qml    # UI for the expanded popup
+│       ├── configGeneral.qml     # Configuration UI (Update interval, graph color, etc.)
+│       ├── code/
+│       │   └── formatter.js      # Pure helper functions (unit-tested)
+│       └── locale/               # Compiled gettext catalogs (generated)
+├── po/
+│   ├── template.pot              # Message template for translators
+│   └── de.po                     # German translation
+└── tests/
+    ├── run-tests.sh              # Full test suite (structure, lint, unit tests, packaging)
+    └── tst_formatter.qml         # QML unit tests for formatter.js
 ```
 
 ---

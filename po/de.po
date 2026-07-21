@@ -1,0 +1,113 @@
+# German translation for the GPU Monitor plasmoid.
+# SPDX-License-Identifier: GPL-3.0-or-later
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_com.github.sreiterer.gpumonitor 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/sreiterer/gpu-monitor-kde\n"
+"POT-Creation-Date: 2026-07-21 17:16+0200\n"
+"PO-Revision-Date: 2026-07-21 17:30+0200\n"
+"Last-Translator: sreiterer\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: contents/config/config.qml:10
+msgid "General"
+msgstr "Allgemein"
+
+#: contents/ui/configGeneral.qml:30
+msgid "GPU device:"
+msgstr "GPU-Gerät:"
+
+#: contents/ui/configGeneral.qml:43
+msgid "Update interval:"
+msgstr "Aktualisierungsintervall:"
+
+#: contents/ui/configGeneral.qml:48
+msgid "%1 ms"
+msgstr "%1 ms"
+
+#: contents/ui/configGeneral.qml:57
+msgid "History length:"
+msgstr "Verlaufslänge:"
+
+#: contents/ui/configGeneral.qml:62
+msgid "%1 sample"
+msgid_plural "%1 samples"
+msgstr[0] "%1 Messwert"
+msgstr[1] "%1 Messwerte"
+
+#: contents/ui/configGeneral.qml:75
+msgid "Panel:"
+msgstr "Kontrollleiste:"
+
+#: contents/ui/configGeneral.qml:76
+msgid "Show percentage label"
+msgstr "Prozentwert anzeigen"
+
+#: contents/ui/configGeneral.qml:81
+msgid "Popup:"
+msgstr "Aufklappfenster:"
+
+#: contents/ui/configGeneral.qml:82
+msgid "Show temperature"
+msgstr "Temperatur anzeigen"
+
+#: contents/ui/configGeneral.qml:87
+msgid "Show video memory usage"
+msgstr "Grafikspeicher-Belegung anzeigen"
+
+#: contents/ui/configGeneral.qml:92
+msgid "Show power draw"
+msgstr "Leistungsaufnahme anzeigen"
+
+#: contents/ui/configGeneral.qml:100
+msgid "Graph color:"
+msgstr "Graph-Farbe:"
+
+#: contents/ui/configGeneral.qml:104
+msgid "Custom:"
+msgstr "Benutzerdefiniert:"
+
+#: contents/ui/FullRepresentation.qml:49 contents/ui/main.qml:108
+msgid "No GPU sensors found"
+msgstr "Keine GPU-Sensoren gefunden"
+
+#: contents/ui/FullRepresentation.qml:50
+msgid ""
+"Make sure the ksystemstats service is running and your GPU driver exposes "
+"usage statistics."
+msgstr ""
+"Stellen Sie sicher, dass der ksystemstats-Dienst läuft und Ihr GPU-Treiber "
+"Auslastungsstatistiken bereitstellt."
+
+#: contents/ui/FullRepresentation.qml:114
+msgid "Temperature:"
+msgstr "Temperatur:"
+
+#: contents/ui/FullRepresentation.qml:120
+msgid "Video memory:"
+msgstr "Grafikspeicher:"
+
+#: contents/ui/FullRepresentation.qml:124
+msgid "%1 of %2"
+msgstr "%1 von %2"
+
+#: contents/ui/FullRepresentation.qml:128
+msgid "Power:"
+msgstr "Leistungsaufnahme:"
+
+#: contents/ui/main.qml:105
+msgid "GPU Monitor"
+msgstr "GPU-Monitor"
+
+#: contents/ui/main.qml:107
+msgid "Usage: %1"
+msgstr "Auslastung: %1"
+
+#: contents/ui/main.qml:124
+msgid "GPU"
+msgstr "GPU"

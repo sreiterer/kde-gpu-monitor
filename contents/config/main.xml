@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+    <kcfgfile name=""/>
+    <group name="General">
+        <entry name="updateInterval" type="Int">
+            <label>Sensor update interval in milliseconds.</label>
+            <default>1000</default>
+        </entry>
+        <entry name="historyLength" type="Int">
+            <label>Number of samples kept for the history graph.</label>
+            <default>60</default>
+        </entry>
+        <entry name="gpuId" type="String">
+            <label>KSystemStats GPU device id (e.g. gpu0). "auto" selects the first available GPU.</label>
+            <default>auto</default>
+        </entry>
+        <entry name="showLabel" type="Bool">
+            <label>Show the percentage label on top of the panel graph.</label>
+            <default>true</default>
+        </entry>
+        <entry name="showTemperature" type="Bool">
+            <label>Show GPU temperature in the popup.</label>
+            <default>true</default>
+        </entry>
+        <entry name="showVram" type="Bool">
+            <label>Show VRAM usage in the popup.</label>
+            <default>true</default>
+        </entry>
+        <entry name="showPower" type="Bool">
+            <label>Show GPU power draw in the popup.</label>
+            <default>true</default>
+        </entry>
+        <entry name="graphColor" type="String">
+            <label>Custom graph color. Empty means the current theme highlight color.</label>
+            <default></default>
+        </entry>
+    </group>
+</kcfg>
